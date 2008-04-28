@@ -14,8 +14,8 @@ The Lightbox Gallery plugin changes the view of galleries to the lightbox.
 
 == Installation ==
 
-1. Edit the `literary-gallery.js` and change the path of line 2 according to your settings.
-2. Copy the `literary-gallery` directory into your `wp-content/plugins` directory
+1. Edit the `lightbox-gallery.js` and change the path of line 2 according to your settings.
+2. Copy the `lightbox-gallery` directory into your `wp-content/plugins` directory
 3. Activate the plugin through the 'Plugins' menu in WordPress
 4. That's it! :)
 
