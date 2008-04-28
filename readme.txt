@@ -27,6 +27,10 @@ The Lightbox Gallery plugin changes the view of galleries to the lightbox.
 
 == Frequently Asked Questions ==
 
+== Screenshots ==
+
+1. Lightbox Gallery
+
 == How to use ==
 How to use this plugin is basically the same as the way to add [gallery] which has been adopted 
 by over WordPress 2.5. Lightbox Gallery plugin automatically converted the default view of gallery 
