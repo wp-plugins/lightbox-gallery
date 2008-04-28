@@ -37,13 +37,17 @@ when the lightbox pops up.
 There are two additional options to extend the shorttag [gallery].
 
 lightboxsize
-The image size when the lightbox pops up. The default is medium, but you can change to full. 
+
+The image size when the lightbox pops up. The default is medium, but you can change to full.
+
 [gallery lightboxsize="full"] 
 
 meta
+
 Defines whether the exif information is displayed. The default is false.
 If you want to show the photo info, set true. The exif shown on the lightbox includes camera body, 
 aperture, focal length, shutter speed, and created timestamp.
+
 [gallery meta="true"] 
 
 == Uninstall ==
