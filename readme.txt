@@ -12,7 +12,7 @@ This plugin changes the view of galleries to the lightbox.
 
 The Lightbox Gallery plugin changes the view of galleries to the lightbox.
 
-* Lightbox display 
+* Lightbox display of Gallery
 * Tooltip view of caption of images 
 * Displays the associated metadata with images 
 
