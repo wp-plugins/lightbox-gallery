@@ -28,7 +28,7 @@ The Lightbox Gallery plugin changes the view of galleries to the lightbox.
 == Frequently Asked Questions ==
 * How can I make regular images appear in a lightbox without [gallery] shortcode?
 
-Just encloseea' andeimgftags byegalleryfclass. Here is a sample.
+Just enclose "a" and "img" tags by "gallery" class. Here is a sample.
 
 &lt;div class="gallery"&gt;
 &lt;a href="image.jpg" title="this is a caption"&gt;<br />
