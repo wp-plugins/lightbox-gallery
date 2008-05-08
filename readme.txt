@@ -38,7 +38,10 @@ Just add rel="lightbox" into "a" tag. Here is a sample.
 
 * How can I handle multiple galleries in one page as saparate ones?
 
-You need to do two steps. 
+You need to do two steps. If you would like to handle galleries separately, 
+add different class names into [gallery] and add codes as many as class names 
+into `lightbox-gallery.js`.
+ 
 
 1. Edit `lightbox-gallery.js` and add some codes. Look at the comment of the file.
 2. Add a class into [gallery]. ex) [gallery class="gallery2"]
@@ -72,7 +75,7 @@ aperture, focal length, shutter speed, and created timestamp.
 
 * class
 
-Adds a class of the gallery. The default is 'gallery1'.
+Adds a class attribute of the gallery. The default is 'gallery1'.
 
 [gallery class="gallery2"]
 
