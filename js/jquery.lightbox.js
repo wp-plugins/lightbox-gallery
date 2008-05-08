@@ -44,7 +44,8 @@
 			keyToNext:				'n',		// (string) (n = next) Letter to show the next image.
 			// Don´t alter these variables in any way
 			imageArray:				[],
-			activeImage:			0
+			activeImage:			0,
+			captionPosition:        ''
 		},settings);
 		// Caching the jQuery object with all elements matched
 		var jQueryMatchedObj = this; // This, in this context, refer to jQuery object
@@ -74,11 +75,15 @@
 			settings.activeImage = 0;
 			// We have an image set? Or just an image? Let´s see it.
 			if ( jQueryMatchedObj.length == 1 ) {
-				settings.imageArray.push(new Array(objClicked.getAttribute('href'),jQuery(objClicked).parent().next().html()));
+				if( settings.captionPosition == 'gallery' ) var position = jQuery(objClicked).parent().next().html();
+				else var position = objClicked.getAttribute('title');
+				settings.imageArray.push(new Array(objClicked.getAttribute('href'),position));
 			} else {
 				// Add an Array (as many as we have), with href and title atributes, inside the Array that storage the images references		
 				for ( var i = 0; i < jQueryMatchedObj.length; i++ ) {
-					settings.imageArray.push(new Array(jQueryMatchedObj[i].getAttribute('href'),jQuery(jQueryMatchedObj[i]).parent().next().html()));
+					if( settings.captionPosition == 'gallery' ) var position = jQuery(jQueryMatchedObj[i]).parent().next().html();
+					else var position = jQueryMatchedObj[i].getAttribute('title');
+					settings.imageArray.push(new Array(jQueryMatchedObj[i].getAttribute('href'),position));
 				}
 			}
 			while ( settings.imageArray[settings.activeImage][0] != objClicked.getAttribute('href') ) {
