@@ -4,7 +4,7 @@ Donate link: http://wordpressgogo.com/development/lightbox-gallery.html
 Tags: lightbox, gallery, image, images, album, photo
 Requires at least: 2.5
 Tested up to: 2.5.1
-Stable tag: 0.1
+Stable tag: 0.2
 
 This plugin changes the view of galleries to the lightbox.
 
@@ -14,11 +14,13 @@ The Lightbox Gallery plugin changes the view of galleries to the lightbox.
 
 * Lightbox display of Gallery
 * Tooltip view of caption of images 
-* Displays the associated metadata with images 
+* Displays the associated metadata with images
+
+You can make regular images appear in a lightbox. See Faq.
 
 == Installation ==
 
-1. Edit the `lightbox-gallery.js` and change the path of line 2 according to your settings.
+1. Edit the `lightbox-gallery.js` and check the path of line 2 according to your settings.
 2. Copy the `lightbox-gallery` directory into your `wp-content/plugins` directory
 3. Activate the plugin through the 'Plugins' menu in WordPress
 4. That's it! :)
@@ -28,13 +30,11 @@ The Lightbox Gallery plugin changes the view of galleries to the lightbox.
 == Frequently Asked Questions ==
 * How can I make regular images appear in a lightbox without [gallery] shortcode?
 
-Just enclose "a" and "img" tags by "gallery" class. Here is a sample.
+Just add rel="lightbox" into "a" tag. Here is a sample.
 
-&lt;div class="gallery"&gt;
-&lt;a href="image.jpg" title="this is a caption"&gt;<br />
+&lt;a href="image.jpg" rel="lightbox" title="this is a caption"&gt;<br />
 &lt;img src="thumbnail.jpg" alt="" /&gt;<br />
 &lt;/a&gt;
-&lt;/div&gt;
 
 == Screenshots ==
 
