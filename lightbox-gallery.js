@@ -4,9 +4,16 @@ var lightbox_path = 'http://'+location.hostname+'/wp-content/plugins/lightbox-ga
 jQuery(document).ready(function () {
   var i = 0;
   showImg(i);
-  jQuery('[@rel*=lightbox]').lightBox();
-  jQuery('.gallery a').lightBox({captionPosition:'gallery'});
-  jQuery('.gallery a').Tooltip({track:true, delay:0, showURL: false});
+  jQuery('a[@rel*=lightbox]').lightBox();
+  jQuery('.gallery1 a').lightBox({captionPosition:'gallery'});
+  jQuery('.gallery1 a').Tooltip({track:true, delay:0, showURL: false});
+  
+// Add these lines if you want to handle multiple galleries in one page.
+// You need to add into a [gallery] shorttag. ex) [gallery class="gallery2"] 
+//  jQuery('.gallery2 a').lightBox({captionPosition:'gallery'});
+//  jQuery('.gallery2 a').Tooltip({track:true, delay:0, showURL: false});
+//  jQuery('.gallery3 a').lightBox({captionPosition:'gallery'});
+//  jQuery('.gallery3 a').Tooltip({track:true, delay:0, showURL: false});
 });
 
 function showImg(i){

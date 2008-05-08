@@ -4,7 +4,7 @@ Donate link: http://wordpressgogo.com/development/lightbox-gallery.html
 Tags: lightbox, gallery, image, images, album, photo
 Requires at least: 2.5
 Tested up to: 2.5.1
-Stable tag: 0.2
+Stable tag: 0.2.1
 
 This plugin changes the view of galleries to the lightbox.
 
@@ -36,6 +36,13 @@ Just add rel="lightbox" into "a" tag. Here is a sample.
 &lt;img src="thumbnail.jpg" alt="" /&gt;<br />
 &lt;/a&gt;
 
+* How can I handle multiple galleries in one page as saparate ones?
+
+You need to do two steps. 
+
+1. Edit `lightbox-gallery.js` and add some codes. Look at the comment of the file.
+2. Add a class into [gallery]. ex) [gallery class="gallery2"]
+
 == Screenshots ==
 
 1. Lightbox Gallery
@@ -61,7 +68,13 @@ Defines whether the exif information is displayed. The default is false.
 If you want to show the photo info, set true. The exif shown on the lightbox includes camera body, 
 aperture, focal length, shutter speed, and created timestamp.
 
-[gallery meta="true"] 
+[gallery meta="true"]
+
+* class
+
+Adds a class of the gallery. The default is 'gallery1'.
+
+[gallery class="gallery2"]
 
 == Uninstall ==
 

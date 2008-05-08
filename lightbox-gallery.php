@@ -4,7 +4,7 @@ Plugin Name: Lightbox Gallery
 Plugin URI: http://wordpressgogo.com/development/lightbox-gallery.html
 Description: Changes to the lightbox view in galleries.
 Author: Hiroaki Miyashita
-Version: 0.2
+Version: 0.2.1
 Author URI: http://wordpressgogo.com/
 */
 
@@ -52,7 +52,8 @@ function lightbox_gallery($attr) {
 		'columns'    => 3,
 		'size'       => 'thumbnail',
 		'lightboxsize' => 'medium',
-		'meta'       => 'false'
+		'meta'       => 'false',
+		'class'       => 'gallery1'
 	), $attr));
 	
 	$id = intval($id);
@@ -79,7 +80,7 @@ function lightbox_gallery($attr) {
 <style type='text/css'>
 	.gallery-item {width: {$itemwidth}%;}
 </style>
-<div class='gallery'>");
+<div class='gallery {$class}'>");
 
 	foreach ( $attachments as $id => $attachment ) {
 		$thumbnail_link = wp_get_attachment_image_src($attachment->ID, $size, false);
