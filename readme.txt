@@ -57,7 +57,7 @@ into the lightbox view. Photo captions are displayed as tooltips. Photo descript
 when the lightbox pops up.
 
 == Advanced settings ==
-There are two additional options to extend the shorttag [gallery].
+There are three additional options to extend the shorttag [gallery].
 
 * lightboxsize
 
