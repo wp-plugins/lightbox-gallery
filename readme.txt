@@ -16,7 +16,7 @@ The Lightbox Gallery plugin changes the view of galleries to the lightbox.
 * Tooltip view of caption of images 
 * Displays the associated metadata with images
 
-You can make regular images appear in a lightbox. See Faq.
+You can also make regular images appear in a lightbox. See Faq.
 
 == Installation ==
 
