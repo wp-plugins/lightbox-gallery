@@ -36,7 +36,7 @@ Just add rel="lightbox" into "a" tag. Here is a sample.
 &lt;img src="thumbnail.jpg" alt="" /&gt;<br />
 &lt;/a&gt;
 
-* How can I handle multiple galleries in one page as saparate ones?
+* How can I handle multiple galleries in one page as separate ones?
 
 You need to do two steps. If you would like to handle galleries separately, 
 add different class names into [gallery] and add codes as many as class names 
