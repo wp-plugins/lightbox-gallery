@@ -4,7 +4,7 @@ Plugin Name: Lightbox Gallery
 Plugin URI: http://wordpressgogo.com/development/lightbox-gallery.html
 Description: Changes to the lightbox view in galleries.
 Author: Hiroaki Miyashita
-Version: 0.2.2
+Version: 0.2.3
 Author URI: http://wordpressgogo.com/
 */
 
@@ -49,9 +49,14 @@ function lightbox_gallery($attr) {
 		if ( !$attr['orderby'] )
 			unset( $attr['orderby'] );
 	}
-		
+	
+	if ( !isset( $attr['orderby'] ) && get_bloginfo('version')<2.6 ) {
+		$attr['orderby'] = 'menu_order ASC, ID ASC';
+	}
+			
 	extract(shortcode_atts(array(
-		'orderby'    => 'menu_order ASC, ID ASC',
+		'order'      => 'ASC',
+		'orderby'    => 'menu_order ID',
 		'id'         => $post->ID,
 		'itemtag'    => 'dl',
 		'icontag'    => 'dt',

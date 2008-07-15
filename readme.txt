@@ -4,7 +4,7 @@ Donate link: http://wordpressgogo.com/development/lightbox-gallery.html
 Tags: lightbox, gallery, image, images, album, photo
 Requires at least: 2.5
 Tested up to: 2.6
-Stable tag: 0.2.2
+Stable tag: 0.2.3
 
 This plugin changes the view of galleries to the lightbox.
 
