@@ -4,7 +4,7 @@ Plugin Name: Lightbox Gallery
 Plugin URI: http://wordpressgogo.com/development/lightbox-gallery.html
 Description: Changes to the lightbox view in galleries.
 Author: Hiroaki Miyashita
-Version: 0.2.1
+Version: 0.2.2
 Author URI: http://wordpressgogo.com/
 */
 
@@ -42,9 +42,16 @@ function lightbox_gallery($attr) {
 	$output = apply_filters('post_gallery', '', $attr);
 	if ( $output != '' )
 		return $output;
+
+	// We're trusting author input, so let's at least make sure it looks like a valid orderby statement
+	if ( isset( $attr['orderby'] ) ) {
+		$attr['orderby'] = sanitize_sql_orderby( $attr['orderby'] );
+		if ( !$attr['orderby'] )
+			unset( $attr['orderby'] );
+	}
 		
 	extract(shortcode_atts(array(
-		'orderby'    => 'ID ASC',
+		'orderby'    => 'menu_order ASC, ID ASC',
 		'id'         => $post->ID,
 		'itemtag'    => 'dl',
 		'icontag'    => 'dt',
@@ -57,8 +64,7 @@ function lightbox_gallery($attr) {
 	), $attr));
 	
 	$id = intval($id);
-	$orderby = addslashes($orderby);
-	$attachments = get_children("post_parent=$id&post_type=attachment&post_mime_type=image&orderby=\"{$orderby}\"");
+	$attachments = get_children( array('post_parent' => $id, 'post_status' => 'inherit', 'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' => $order, 'orderby' => $orderby) );
 
 	if ( empty($attachments) )
 		return '';
@@ -97,6 +103,8 @@ function lightbox_gallery($attr) {
 				$metadata .= __('aperture', 'lightbox-gallery')          . ": F". $imagedata['image_meta']['aperture'] . " ";
 			if($imagedata['image_meta']['focal_length'])
 				$metadata .= __('focal_length', 'lightbox-gallery')      . ": ". $imagedata['image_meta']['focal_length'] . "mm ";
+			if($imagedata['image_meta']['iso'])
+				$metadata .= __('ISO', 'lightbox-gallery')      . ": ". $imagedata['image_meta']['iso'] . " ";
 			if($imagedata['image_meta']['shutter_speed']) {
 				if($imagedata['image_meta']['shutter_speed']<1) $speed = "1/". round(1/$imagedata['image_meta']['shutter_speed']);
 				else $speed = $imagedata['image_meta']['shutter_speed'];

@@ -15,9 +15,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Lightbox Gallery\n"
-"Report-Msgid-Bugs-To: wp-polyglots@lists.automattic.com\n"
-"POT-Creation-Date: 2008-03-26 13:02+0200\n"
-"PO-Revision-Date: 2008-04-21 20:41+0900\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2008-07-15 17:15+0900\n"
+"PO-Revision-Date: 2008-07-15 17:15+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -30,23 +30,27 @@ msgstr ""
 "X-Poedit-Basepath: ../\n"
 "X-Poedit-SearchPath-0: lightbox-gallery\n"
 
-#: lightbox-gallery/lightbox-gallery.php:95
+#: lightbox-gallery/lightbox-gallery.php:101
 msgid "camera"
 msgstr "機種"
 
-#: lightbox-gallery/lightbox-gallery.php:97
+#: lightbox-gallery/lightbox-gallery.php:103
 msgid "aperture"
 msgstr "絞り値"
 
-#: lightbox-gallery/lightbox-gallery.php:99
+#: lightbox-gallery/lightbox-gallery.php:105
 msgid "focal_length"
 msgstr "焦点距離"
 
-#: lightbox-gallery/lightbox-gallery.php:101
+#: lightbox-gallery/lightbox-gallery.php:107
+msgid "ISO"
+msgstr "ISO"
+
+#: lightbox-gallery/lightbox-gallery.php:111
 msgid "shutter_speed"
 msgstr "シャッタースピード"
 
-#: lightbox-gallery/lightbox-gallery.php:103
+#: lightbox-gallery/lightbox-gallery.php:114
 msgid "created_timestamp"
 msgstr "撮影日時"
 
