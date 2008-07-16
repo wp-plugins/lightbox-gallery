@@ -25,7 +25,7 @@ function add_lightbox_gallery_head() {
 function add_lightbox_gallery_jquery() {
 	if (strpos($_SERVER['REQUEST_URI'], 'admin.php') === false ) {
 		wp_enqueue_script( 'jquery');
-		wp_enqueue_script('dimensions', '/wp-includes/js/jquery/jquery.dimensions.js', array('jquery'));
+		wp_enqueue_script('dimensions', '/wp-content/plugins/lightbox-gallery/js/jquery.dimensions.js', array('jquery'));
 		wp_enqueue_script('bgtiframe', '/wp-content/plugins/lightbox-gallery/js/jquery.bgiframe.js', array('jquery'));
 		wp_enqueue_script('lightbox', '/wp-content/plugins/lightbox-gallery/js/jquery.lightbox.js', array('jquery'));
 		wp_enqueue_script('tooltip', '/wp-content/plugins/lightbox-gallery/js/jquery.tooltip.js', array('jquery'));
