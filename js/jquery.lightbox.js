@@ -79,11 +79,19 @@
 				else var position = objClicked.getAttribute('title');
 				settings.imageArray.push(new Array(objClicked.getAttribute('href'),position));
 			} else {
-				// Add an Array (as many as we have), with href and title atributes, inside the Array that storage the images references		
+				// Add an Array (as many as we have), with href and title atributes, inside the Array that storage the images references
 				for ( var i = 0; i < jQueryMatchedObj.length; i++ ) {
-					if( settings.captionPosition == 'gallery' ) var position = jQuery(jQueryMatchedObj[i]).parent().next().html();
-					else var position = jQueryMatchedObj[i].getAttribute('title');
-					settings.imageArray.push(new Array(jQueryMatchedObj[i].getAttribute('href'),position));
+					if( i > 0 ) {
+						if( !(jQueryMatchedObj[i-1].getAttribute('href') != jQueryMatchedObj[i].getAttribute('href') && jQuery(jQueryMatchedObj[i-1]).parent().parent().children().children().attr('href') == jQuery(jQueryMatchedObj[i]).parent().parent().children().children().attr('href'))) {
+							if( settings.captionPosition == 'gallery' ) var position = jQuery(jQueryMatchedObj[i]).parent().next().html();
+							else var position = jQuery(jQueryMatchedObj[i]).parent().parent().children().children().attr('title');
+							settings.imageArray.push(new Array(jQuery(jQueryMatchedObj[i]).parent().parent().children().children().attr('href'),position));
+						}
+					} else {
+						if( settings.captionPosition == 'gallery' ) var position = jQuery(jQueryMatchedObj[i]).parent().next().html();
+						else var position = jQuery(jQueryMatchedObj[i]).parent().parent().children().children().attr('title');
+						settings.imageArray.push(new Array(jQuery(jQueryMatchedObj[i]).parent().parent().children().children().attr('href'),position));
+					}
 				}
 			}
 			while ( settings.imageArray[settings.activeImage][0] != objClicked.getAttribute('href') ) {

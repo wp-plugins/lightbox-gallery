@@ -3,8 +3,8 @@ Contributors: Hiroaki Miyashita
 Donate link: http://wordpressgogo.com/development/lightbox-gallery.html
 Tags: lightbox, gallery, image, images, album, photo
 Requires at least: 2.5
-Tested up to: 2.6
-Stable tag: 0.2.3
+Tested up to: 2.6.1
+Stable tag: 0.2.4
 
 This plugin changes the view of galleries to the lightbox.
 
@@ -24,6 +24,10 @@ You can also make regular images appear in a lightbox. See Faq.
 2. Copy the `lightbox-gallery` directory into your `wp-content/plugins` directory
 3. Activate the plugin through the 'Plugins' menu in WordPress
 4. That's it! :)
+
+Lightbox Gallery will load 'lightbox-gallery.css' from your theme's directory if it exists. 
+If it doesn't exists, it will just load the default 'lightbox-gallery.css' that comes with Lightbox Gallery. 
+This will allow you to upgrade Lightbox Gallery without worrying about overwriting your lightbox gallery styles that you have created. 
 
 == Known Issues / Bugs ==
 
@@ -78,6 +82,12 @@ aperture, focal length, shutter speed, and created timestamp.
 Adds a class attribute of the gallery. The default is 'gallery1'.
 
 [gallery class="gallery2"]
+
+* nofollow
+
+Adds the attribute, rel="nofollow". The default is false.
+
+[gallery nofollow="true"]
 
 == Uninstall ==
 

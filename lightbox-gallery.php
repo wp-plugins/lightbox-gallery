@@ -4,7 +4,7 @@ Plugin Name: Lightbox Gallery
 Plugin URI: http://wordpressgogo.com/development/lightbox-gallery.html
 Description: Changes to the lightbox view in galleries.
 Author: Hiroaki Miyashita
-Version: 0.2.3
+Version: 0.2.4
 Author URI: http://wordpressgogo.com/
 */
 
@@ -17,7 +17,11 @@ add_action('wp_head', 'add_lightbox_gallery_head',1);
 add_action('wp_print_scripts', 'add_lightbox_gallery_jquery',1);
 
 function add_lightbox_gallery_head() {
-	echo '<link rel="stylesheet" type="text/css" href="' . get_settings('siteurl') . '/wp-content/plugins/lightbox-gallery/lightbox-gallery.css" />'."\n";
+	if(@file_exists(TEMPLATEPATH.'/lightbox-gallery.css')) {
+		echo '<link rel="stylesheet" href="'.get_stylesheet_directory_uri().'/lightbox-gallery.css" type="text/css" />'."\n";	
+	} else {
+		echo '<link rel="stylesheet" type="text/css" href="' . get_settings('siteurl') . '/wp-content/plugins/lightbox-gallery/lightbox-gallery.css" />'."\n";
+	}	
 	echo '<link rel="stylesheet" type="text/css" href="' . get_settings('siteurl') . '/wp-content/plugins/lightbox-gallery/js/jquery.lightbox.css" />'."\n";
 	echo '<link rel="stylesheet" type="text/css" href="' . get_settings('siteurl') . '/wp-content/plugins/lightbox-gallery/js/jquery.tooltip.css" />'."\n";
 }
@@ -65,7 +69,8 @@ function lightbox_gallery($attr) {
 		'size'       => 'thumbnail',
 		'lightboxsize' => 'medium',
 		'meta'       => 'false',
-		'class'       => 'gallery1'
+		'class'      => 'gallery1',
+		'nofollow'   => false
 	), $attr));
 	
 	$id = intval($id);
@@ -122,7 +127,9 @@ function lightbox_gallery($attr) {
 		$output .= "<{$itemtag} class='gallery-item'>";
 		$output .= "
 <{$icontag} class='gallery-icon'>
-<a href='{$lightbox_link[0]}' title='{$attachment->post_excerpt}'><img src='{$thumbnail_link[0]}' width='{$thumbnail_link[1]}' height='{$thumbnail_link[2]}' alt='{$attachment->post_excerpt}' /></a>
+<a href='{$lightbox_link[0]}' title='{$attachment->post_excerpt}'";
+		if ( $nofollow == "true" ) $output .= " rel='nofollow'";
+		$output .= "><img src='{$thumbnail_link[0]}' width='{$thumbnail_link[1]}' height='{$thumbnail_link[2]}' alt='{$attachment->post_excerpt}' /></a>
 </{$icontag}>";
 		if ( $captiontag && (trim($attachment->post_excerpt) || trim($attachment->post_content) || $metadata) ) {
 			$output .= "<{$captiontag} class='gallery-caption'>";
