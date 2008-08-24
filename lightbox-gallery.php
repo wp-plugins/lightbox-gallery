@@ -4,7 +4,7 @@ Plugin Name: Lightbox Gallery
 Plugin URI: http://wordpressgogo.com/development/lightbox-gallery.html
 Description: Changes to the lightbox view in galleries.
 Author: Hiroaki Miyashita
-Version: 0.2.4
+Version: 0.2.5
 Author URI: http://wordpressgogo.com/
 */
 
@@ -99,48 +99,50 @@ function lightbox_gallery($attr) {
 <div class='gallery {$class}'>");
 
 	foreach ( $attachments as $id => $attachment ) {
-		$thumbnail_link = wp_get_attachment_image_src($attachment->ID, $size, false);
-		$lightbox_link = wp_get_attachment_image_src($attachment->ID, $lightboxsize, false);
-		trim($attachment->post_content);
-		trim($attachment->post_excerpt);
+		if ( $attachment->post_type == 'attachment' ) {
+			$thumbnail_link = wp_get_attachment_image_src($attachment->ID, $size, false);
+			$lightbox_link = wp_get_attachment_image_src($attachment->ID, $lightboxsize, false);
+			trim($attachment->post_content);
+			trim($attachment->post_excerpt);
 		
-		if($meta == "true") {
-			$imagedata = wp_get_attachment_metadata($attachment->ID);
-			unset($metadata);
-			if($imagedata['image_meta']['camera'])
-				$metadata .= __('camera', 'lightbox-gallery')            . ": ". $imagedata['image_meta']['camera'] . " ";
-			if($imagedata['image_meta']['aperture'])
-				$metadata .= __('aperture', 'lightbox-gallery')          . ": F". $imagedata['image_meta']['aperture'] . " ";
-			if($imagedata['image_meta']['focal_length'])
-				$metadata .= __('focal_length', 'lightbox-gallery')      . ": ". $imagedata['image_meta']['focal_length'] . "mm ";
-			if($imagedata['image_meta']['iso'])
-				$metadata .= __('ISO', 'lightbox-gallery')      . ": ". $imagedata['image_meta']['iso'] . " ";
-			if($imagedata['image_meta']['shutter_speed']) {
-				if($imagedata['image_meta']['shutter_speed']<1) $speed = "1/". round(1/$imagedata['image_meta']['shutter_speed']);
-				else $speed = $imagedata['image_meta']['shutter_speed'];
-				$metadata .= __('shutter_speed', 'lightbox-gallery')     . ": " . $speed . " ";
+			if($meta == "true") {
+				$imagedata = wp_get_attachment_metadata($attachment->ID);
+				unset($metadata);
+				if($imagedata['image_meta']['camera'])
+					$metadata .= __('camera', 'lightbox-gallery')            . ": ". $imagedata['image_meta']['camera'] . " ";
+				if($imagedata['image_meta']['aperture'])
+					$metadata .= __('aperture', 'lightbox-gallery')          . ": F". $imagedata['image_meta']['aperture'] . " ";
+				if($imagedata['image_meta']['focal_length'])
+					$metadata .= __('focal_length', 'lightbox-gallery')      . ": ". $imagedata['image_meta']['focal_length'] . "mm ";
+				if($imagedata['image_meta']['iso'])
+					$metadata .= __('ISO', 'lightbox-gallery')      . ": ". $imagedata['image_meta']['iso'] . " ";
+				if($imagedata['image_meta']['shutter_speed']) {
+					if($imagedata['image_meta']['shutter_speed']<1) $speed = "1/". round(1/$imagedata['image_meta']['shutter_speed']);
+					else $speed = $imagedata['image_meta']['shutter_speed'];
+					$metadata .= __('shutter_speed', 'lightbox-gallery')     . ": " . $speed . " ";
+				}
+				if($imagedata['image_meta']['created_timestamp'])
+					$metadata .= __('created_timestamp', 'lightbox-gallery') . ": ". date('Y:m:d H:i:s', $imagedata['image_meta']['created_timestamp']);
 			}
-			if($imagedata['image_meta']['created_timestamp'])
-				$metadata .= __('created_timestamp', 'lightbox-gallery') . ": ". date('Y:m:d H:i:s', $imagedata['image_meta']['created_timestamp']);
-		}
 
-		$output .= "<{$itemtag} class='gallery-item'>";
-		$output .= "
+			$output .= "<{$itemtag} class='gallery-item'>";
+			$output .= "
 <{$icontag} class='gallery-icon'>
 <a href='{$lightbox_link[0]}' title='{$attachment->post_excerpt}'";
-		if ( $nofollow == "true" ) $output .= " rel='nofollow'";
-		$output .= "><img src='{$thumbnail_link[0]}' width='{$thumbnail_link[1]}' height='{$thumbnail_link[2]}' alt='{$attachment->post_excerpt}' /></a>
+			if ( $nofollow == "true" ) $output .= " rel='nofollow'";
+			$output .= "><img src='{$thumbnail_link[0]}' width='{$thumbnail_link[1]}' height='{$thumbnail_link[2]}' alt='{$attachment->post_excerpt}' /></a>
 </{$icontag}>";
-		if ( $captiontag && (trim($attachment->post_excerpt) || trim($attachment->post_content) || $metadata) ) {
-			$output .= "<{$captiontag} class='gallery-caption'>";
-if($attachment->post_excerpt) $output .= $attachment->post_excerpt . "<br />\n";
-if($attachment->post_content) $output .= $attachment->post_content . "<br />\n";
-if($metadata) $output .= $metadata;
-			$output .= "</{$captiontag}>";
+			if ( $captiontag && (trim($attachment->post_excerpt) || trim($attachment->post_content) || $metadata) ) {
+				$output .= "<{$captiontag} class='gallery-caption'>";
+				if($attachment->post_excerpt) $output .= $attachment->post_excerpt . "<br />\n";
+				if($attachment->post_content) $output .= $attachment->post_content . "<br />\n";
+				if($metadata) $output .= $metadata;
+				$output .= "</{$captiontag}>";
+			}
+			$output .= "</{$itemtag}>";
+			if ( $columns > 0 && ++$i % $columns == 0 )
+				$output .= '<div style="clear: both"></div>';
 		}
-		$output .= "</{$itemtag}>";
-		if ( $columns > 0 && ++$i % $columns == 0 )
-			$output .= '<div style="clear: both"></div>';
 	}
 
 	$output .= '
