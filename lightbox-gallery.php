@@ -4,7 +4,7 @@ Plugin Name: Lightbox Gallery
 Plugin URI: http://wordpressgogo.com/development/lightbox-gallery.html
 Description: Changes to the lightbox view in galleries.
 Author: Hiroaki Miyashita
-Version: 0.2.5
+Version: 0.2.6
 Author URI: http://wordpressgogo.com/
 */
 
@@ -27,7 +27,7 @@ function add_lightbox_gallery_head() {
 }
 	
 function add_lightbox_gallery_jquery() {
-	if (strpos($_SERVER['REQUEST_URI'], 'admin.php') === false ) {
+	if ( !is_admin() ) {
 		wp_enqueue_script( 'jquery');
 		wp_enqueue_script('dimensions', '/wp-content/plugins/lightbox-gallery/js/jquery.dimensions.js', array('jquery'));
 		wp_enqueue_script('bgtiframe', '/wp-content/plugins/lightbox-gallery/js/jquery.bgiframe.js', array('jquery'));
