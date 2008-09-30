@@ -4,7 +4,7 @@ Plugin Name: Lightbox Gallery
 Plugin URI: http://wordpressgogo.com/development/lightbox-gallery.html
 Description: Changes to the lightbox view in galleries.
 Author: Hiroaki Miyashita
-Version: 0.2.6
+Version: 0.3
 Author URI: http://wordpressgogo.com/
 */
 
@@ -17,17 +17,43 @@ add_action('wp_head', 'add_lightbox_gallery_head',1);
 add_action('wp_print_scripts', 'add_lightbox_gallery_jquery',1);
 
 function add_lightbox_gallery_head() {
-	if(@file_exists(TEMPLATEPATH.'/lightbox-gallery.css')) {
-		echo '<link rel="stylesheet" href="'.get_stylesheet_directory_uri().'/lightbox-gallery.css" type="text/css" />'."\n";	
-	} else {
-		echo '<link rel="stylesheet" type="text/css" href="' . get_settings('siteurl') . '/wp-content/plugins/lightbox-gallery/lightbox-gallery.css" />'."\n";
-	}	
-	echo '<link rel="stylesheet" type="text/css" href="' . get_settings('siteurl') . '/wp-content/plugins/lightbox-gallery/js/jquery.lightbox.css" />'."\n";
-	echo '<link rel="stylesheet" type="text/css" href="' . get_settings('siteurl') . '/wp-content/plugins/lightbox-gallery/js/jquery.tooltip.css" />'."\n";
+	global $wp_query;
+	
+	$flag = false;
+	if($wp_query->posts) {
+		for($i=0;$i<count($wp_query->posts);$i++) {
+			if ( preg_match('/\[gallery([^\]]+)?\]/', $wp_query->posts[$i]->post_content) ) {
+				$flag = true;
+				break;
+			}
+		}
+	}
+	
+	if ( !is_admin() && $flag ) {
+		if (@file_exists(TEMPLATEPATH.'/lightbox-gallery.css')) {
+			echo '<link rel="stylesheet" href="'.get_stylesheet_directory_uri().'/lightbox-gallery.css" type="text/css" />'."\n";	
+		} else {
+			echo '<link rel="stylesheet" type="text/css" href="' . get_settings('siteurl') . '/wp-content/plugins/lightbox-gallery/lightbox-gallery.css" />'."\n";
+		}	
+		echo '<link rel="stylesheet" type="text/css" href="' . get_settings('siteurl') . '/wp-content/plugins/lightbox-gallery/js/jquery.lightbox.css" />'."\n";
+		echo '<link rel="stylesheet" type="text/css" href="' . get_settings('siteurl') . '/wp-content/plugins/lightbox-gallery/js/jquery.tooltip.css" />'."\n";
+	}
 }
 	
 function add_lightbox_gallery_jquery() {
-	if ( !is_admin() ) {
+	global $wp_query;
+	
+	$flag = false;
+	if($wp_query->posts) {
+		for($i=0;$i<count($wp_query->posts);$i++) {
+			if ( preg_match('/\[gallery([^\]]+)?\]/', $wp_query->posts[$i]->post_content) ) {
+				$flag = true;
+				break;
+			}
+		}
+	}
+	
+	if ( !is_admin() && $flag ) {
 		wp_enqueue_script( 'jquery');
 		wp_enqueue_script('dimensions', '/wp-content/plugins/lightbox-gallery/js/jquery.dimensions.js', array('jquery'));
 		wp_enqueue_script('bgtiframe', '/wp-content/plugins/lightbox-gallery/js/jquery.bgiframe.js', array('jquery'));

@@ -2,11 +2,14 @@
 var lightbox_path = 'http://'+location.hostname+'/wp-content/plugins/lightbox-gallery/';
 
 jQuery(document).ready(function () {
-  var i = 0;
-  showImg(i);
-  jQuery('a[@rel*=lightbox]').lightBox();
-  jQuery('.gallery1 a').lightBox({captionPosition:'gallery'});
-  jQuery('.gallery1 a').Tooltip({track:true, delay:0, showURL: false});
+
+// If you make images display slowly, use following two lines;
+//	var i = 0;
+//	showImg(i);
+
+	jQuery('a[@rel*=lightbox]').lightBox();
+	jQuery('.gallery1 a').lightBox({captionPosition:'gallery'});
+	jQuery('.gallery1 a').Tooltip({track:true, delay:0, showURL: false});
   
 // Add these lines if you want to handle multiple galleries in one page.
 // You need to add into a [gallery] shorttag. ex) [gallery class="gallery2"] 
@@ -17,9 +20,9 @@ jQuery(document).ready(function () {
 });
 
 function showImg(i){
-  if(i == jQuery('img').length){
-    return;
-  }else{
-    jQuery(jQuery('img')[i]).animate({opacity:'show'},"normal",function(){i++;showImg(i)});
-  }
+	if(i == jQuery('img').length){
+		return;
+	}else{
+		jQuery(jQuery('img')[i]).animate({opacity:'show'},"normal",function(){i++;showImg(i)});
+	}
 }
