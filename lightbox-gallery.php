@@ -4,7 +4,7 @@ Plugin Name: Lightbox Gallery
 Plugin URI: http://wordpressgogo.com/development/lightbox-gallery.html
 Description: Changes to the lightbox view in galleries.
 Author: Hiroaki Miyashita
-Version: 0.3
+Version: 0.3.1
 Author URI: http://wordpressgogo.com/
 */
 
@@ -22,7 +22,7 @@ function add_lightbox_gallery_head() {
 	$flag = false;
 	if($wp_query->posts) {
 		for($i=0;$i<count($wp_query->posts);$i++) {
-			if ( preg_match('/\[gallery([^\]]+)?\]/', $wp_query->posts[$i]->post_content) ) {
+			if ( preg_match('/\[gallery([^\]]+)?\]/', $wp_query->posts[$i]->post_content) || preg_match('/<a\s.*?rel\s*=\s*(?:"|\')?lightbox(?:"|\')?[^>]*>/',$wp_query->posts[$i]->post_content) ) {
 				$flag = true;
 				break;
 			}
@@ -46,7 +46,7 @@ function add_lightbox_gallery_jquery() {
 	$flag = false;
 	if($wp_query->posts) {
 		for($i=0;$i<count($wp_query->posts);$i++) {
-			if ( preg_match('/\[gallery([^\]]+)?\]/', $wp_query->posts[$i]->post_content) ) {
+			if ( preg_match('/\[gallery([^\]]+)?\]/', $wp_query->posts[$i]->post_content) || preg_match('/<a\s.*?rel\s*=\s*(?:"|\')?lightbox(?:"|\')?[^>]*>/',$wp_query->posts[$i]->post_content) ) {
 				$flag = true;
 				break;
 			}
