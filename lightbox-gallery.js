@@ -9,7 +9,7 @@ jQuery(document).ready(function () {
 
 	jQuery('a[@rel*=lightbox]').lightBox();
 	jQuery('.gallery1 a').lightBox({captionPosition:'gallery'});
-	jQuery('.gallery1 a').Tooltip({track:true, delay:0, showURL: false});
+	jQuery('.gallery1 a').tooltip({track:true, delay:0, showURL: false});
   
 // Add these lines if you want to handle multiple galleries in one page.
 // You need to add into a [gallery] shorttag. ex) [gallery class="gallery2"] 

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Lightbox Gallery\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-07-15 17:15+0900\n"
-"PO-Revision-Date: 2008-07-15 17:15+0900\n"
+"POT-Creation-Date: 2009-04-27 20:36+0900\n"
+"PO-Revision-Date: 2009-04-27 20:36+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -13,27 +13,134 @@ msgstr ""
 "X-Poedit-Basepath: ../\n"
 "X-Poedit-SearchPath-0: lightbox-gallery\n"
 
-#: lightbox-gallery/lightbox-gallery.php:101
+#: lightbox-gallery/lightbox-gallery.php:147
+msgid "Settings"
+msgstr ""
+
+#: lightbox-gallery/lightbox-gallery.php:155
+#: lightbox-gallery/lightbox-gallery.php:181
+msgid "Lightbox Gallery"
+msgstr ""
+
+#: lightbox-gallery/lightbox-gallery.php:169
+msgid "Options updated."
+msgstr ""
+
+#: lightbox-gallery/lightbox-gallery.php:173
+msgid "Options deleted."
+msgstr ""
+
+#: lightbox-gallery/lightbox-gallery.php:187
+#: lightbox-gallery/lightbox-gallery.php:231
+#: lightbox-gallery/lightbox-gallery.php:247
+msgid "Click to toggle"
+msgstr ""
+
+#: lightbox-gallery/lightbox-gallery.php:188
+msgid "Lightbox Gallery Options"
+msgstr ""
+
+#: lightbox-gallery/lightbox-gallery.php:194
+msgid "In case that you would like to use the lightbox in certain categories (comma-deliminated)"
+msgstr ""
+
+#: lightbox-gallery/lightbox-gallery.php:198
+msgid "In case that you would like to use the lightbox in certain pages (comma-deliminated)"
+msgstr ""
+
+#: lightbox-gallery/lightbox-gallery.php:202
+msgid "In case that you would like to disable to load the lightbox-gallery.css"
+msgstr ""
+
+#: lightbox-gallery/lightbox-gallery.php:203
+msgid "Do not use the lightbox-gallery.css"
+msgstr ""
+
+#: lightbox-gallery/lightbox-gallery.php:206
+msgid "In case that you would like to disable to load the jquery.lightbox.css"
+msgstr ""
+
+#: lightbox-gallery/lightbox-gallery.php:207
+msgid "Do not use the jquery.lightbox.css"
+msgstr ""
+
+#: lightbox-gallery/lightbox-gallery.php:210
+msgid "In case that you would like to disable to load the jquery.tooltip.css"
+msgstr ""
+
+#: lightbox-gallery/lightbox-gallery.php:211
+msgid "Do not use the jquery.tooltip.css"
+msgstr ""
+
+#: lightbox-gallery/lightbox-gallery.php:214
+msgid "In case that you would like to disable to load the column inline css"
+msgstr ""
+
+#: lightbox-gallery/lightbox-gallery.php:215
+msgid "Do not use the column inline css"
+msgstr ""
+
+#: lightbox-gallery/lightbox-gallery.php:218
+msgid "In case that you would like to set the default number of columns"
+msgstr ""
+
+#: lightbox-gallery/lightbox-gallery.php:222
+msgid "Update Options &raquo;"
+msgstr ""
+
+#: lightbox-gallery/lightbox-gallery.php:232
+msgid "Delete Options"
+msgstr ""
+
+#: lightbox-gallery/lightbox-gallery.php:234
+msgid "Are you sure to delete options? Options you set will be deleted."
+msgstr ""
+
+#: lightbox-gallery/lightbox-gallery.php:238
+msgid "Delete Options &raquo;"
+msgstr ""
+
+#: lightbox-gallery/lightbox-gallery.php:248
+msgid "Donation"
+msgstr ""
+
+#: lightbox-gallery/lightbox-gallery.php:250
+msgid "If you liked this plugin, please make a donation via paypal! Any amount is welcome. Your support is much appreciated."
+msgstr ""
+
+#: lightbox-gallery/lightbox-gallery.php:324
+msgid "Pages:"
+msgstr ""
+
+#: lightbox-gallery/lightbox-gallery.php:326
+msgid "Next page"
+msgstr ""
+
+#: lightbox-gallery/lightbox-gallery.php:327
+msgid "Previous page"
+msgstr ""
+
+#: lightbox-gallery/lightbox-gallery.php:379
 msgid "camera"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:103
+#: lightbox-gallery/lightbox-gallery.php:381
 msgid "aperture"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:105
+#: lightbox-gallery/lightbox-gallery.php:383
 msgid "focal_length"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:107
+#: lightbox-gallery/lightbox-gallery.php:385
 msgid "ISO"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:111
+#: lightbox-gallery/lightbox-gallery.php:389
 msgid "shutter_speed"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:114
+#: lightbox-gallery/lightbox-gallery.php:392
 msgid "created_timestamp"
 msgstr ""
 

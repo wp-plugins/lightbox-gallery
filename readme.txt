@@ -1,10 +1,10 @@
 === Lightbox Gallery ===
 Contributors: Hiroaki Miyashita
 Donate link: http://wordpressgogo.com/development/lightbox-gallery.html
-Tags: lightbox, gallery, image, images, album, photo
+Tags: lightbox, gallery, image, images, album, photo, photos, picture, pictures
 Requires at least: 2.5
-Tested up to: 2.6.2
-Stable tag: 0.3.1
+Tested up to: 2.7.1
+Stable tag: 0.4
 
 This plugin changes the view of galleries to the lightbox.
 
@@ -15,8 +15,17 @@ The Lightbox Gallery plugin changes the view of galleries to the lightbox.
 * Lightbox display of Gallery
 * Tooltip view of caption of images 
 * Displays the associated metadata with images
+* Divides Gallery into several pages
+* Extends the default Gallery options
+* Additional settings are set in the option page
 
 You can also make regular images appear in a lightbox. See Faq.
+
+Localization
+
+* Japanese (ja) - [Hiroaki Miyashita](http://wordpressgogo.com/)
+
+If you have translated into your language, please let me know.
 
 == Installation ==
 
@@ -27,7 +36,7 @@ You can also make regular images appear in a lightbox. See Faq.
 
 Lightbox Gallery will load 'lightbox-gallery.css' from your theme's directory if it exists. 
 If it doesn't exists, it will just load the default 'lightbox-gallery.css' that comes with Lightbox Gallery. 
-This will allow you to upgrade Lightbox Gallery without worrying about overwriting your lightbox gallery styles that you have created. 
+This will allow you to upgrade Lightbox Gallery without worrying about overwriting your lightbox gallery styles that you have created.
 
 == Known Issues / Bugs ==
 
@@ -79,7 +88,7 @@ aperture, focal length, shutter speed, and created timestamp.
 
 * class
 
-Adds a class attribute of the gallery. The default is 'gallery1'.
+Adds a class attribute of the gallery. The default is `gallery1`.
 
 [gallery class="gallery2"]
 
@@ -88,6 +97,20 @@ Adds a class attribute of the gallery. The default is 'gallery1'.
 Adds the attribute, rel="nofollow". The default is false.
 
 [gallery nofollow="true"]
+
+* from, num
+
+Defines from which and how many photos are displayed.
+If the number of photos is over that of `num`, the navigation will be shown.
+You can use the navigation option almost same as the `wp_link_pages` function.
+
+[gallery from="5" num="10"]
+
+* pagenavi
+
+If you would like not to show the navigation, set `0`. The default is `1`.
+
+[gallery num="10" pagenavi="0"]
 
 == Uninstall ==
 
