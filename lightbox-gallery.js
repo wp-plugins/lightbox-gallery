@@ -14,9 +14,9 @@ jQuery(document).ready(function () {
 // Add these lines if you want to handle multiple galleries in one page.
 // You need to add into a [gallery] shorttag. ex) [gallery class="gallery2"] 
 //  jQuery('.gallery2 a').lightBox({captionPosition:'gallery'});
-//  jQuery('.gallery2 a').Tooltip({track:true, delay:0, showURL: false});
+//  jQuery('.gallery2 a').tooltip({track:true, delay:0, showURL: false});
 //  jQuery('.gallery3 a').lightBox({captionPosition:'gallery'});
-//  jQuery('.gallery3 a').Tooltip({track:true, delay:0, showURL: false});
+//  jQuery('.gallery3 a').tooltip({track:true, delay:0, showURL: false});
 });
 
 function showImg(i){

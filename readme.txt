@@ -4,7 +4,7 @@ Donate link: http://wordpressgogo.com/development/lightbox-gallery.html
 Tags: lightbox, gallery, image, images, album, photo, photos, picture, pictures
 Requires at least: 2.5
 Tested up to: 2.7.1
-Stable tag: 0.4
+Stable tag: 0.4.1
 
 This plugin changes the view of galleries to the lightbox.
 
@@ -23,6 +23,7 @@ You can also make regular images appear in a lightbox. See Faq.
 
 Localization
 
+* Italian (it_IT) - [Gianni Diurno](http://gidibao.net/)
 * Japanese (ja) - [Hiroaki Miyashita](http://wordpressgogo.com/)
 
 If you have translated into your language, please let me know.
@@ -32,11 +33,11 @@ If you have translated into your language, please let me know.
 1. Edit the `lightbox-gallery.js` and check the path of line 2 according to your settings.
 2. Copy the `lightbox-gallery` directory into your `wp-content/plugins` directory
 3. Activate the plugin through the 'Plugins' menu in WordPress
-4. That's it! :)
+4. There may exist localized images in 'images' directory. Replace default images with them.
+5. That's it! :)
 
-Lightbox Gallery will load 'lightbox-gallery.css' from your theme's directory if it exists. 
-If it doesn't exists, it will just load the default 'lightbox-gallery.css' that comes with Lightbox Gallery. 
-This will allow you to upgrade Lightbox Gallery without worrying about overwriting your lightbox gallery styles that you have created.
+Lightbox Gallery will load 'lightbox-gallery.css' and 'lightbox-gallery.js' from your theme's directory if they exist. 
+If they don't exist, they will just load the default 'lightbox-gallery.css' and 'lightbox-gallery.js' that come with Lightbox Gallery. This will allow you to upgrade Lightbox Gallery without worrying about overwriting your lightbox gallery styles that you have created.
 
 == Known Issues / Bugs ==
 
