@@ -4,7 +4,7 @@ Plugin Name: Lightbox Gallery
 Plugin URI: http://wordpressgogo.com/development/lightbox-gallery.html
 Description: Changes to the lightbox view in galleries.
 Author: Hiroaki Miyashita
-Version: 0.4.1
+Version: 0.4.2
 Author URI: http://wordpressgogo.com/
 */
 
@@ -344,8 +344,9 @@ function lightbox_gallery($attr) {
 		
 	if ( is_numeric($from) && !$num ) :
 		$attachments = array_splice($attachments, $from);
-	elseif ( is_numeric($page) && is_numeric($num) ) :
-		$numpages = (int)($total/$num)+1;
+	elseif ( is_numeric($page) && is_numeric($num) && $num>0 ) :
+		if ( $total%$num == 0 ) $numpages = (int)($total/$num);
+		else $numpages = (int)($total/$num)+1;
 		$attachments = array_splice($attachments, ($page-1)*$num+$from, $num);
 	endif;
 	
