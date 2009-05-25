@@ -3,8 +3,8 @@ Contributors: Hiroaki Miyashita
 Donate link: http://wordpressgogo.com/development/lightbox-gallery.html
 Tags: lightbox, gallery, image, images, album, photo, photos, picture, pictures
 Requires at least: 2.5
-Tested up to: 2.7.1
-Stable tag: 0.4.2
+Tested up to: 2.8 Beta 2
+Stable tag: 0.4.3
 
 This plugin changes the view of galleries to the lightbox.
 
@@ -25,6 +25,7 @@ Localization
 
 * Italian (it_IT) - [Gianni Diurno](http://gidibao.net/)
 * Japanese (ja) - [Hiroaki Miyashita](http://wordpressgogo.com/)
+* Russian (by_BY) - [Fat Cow](http://www.fatcow.com/)
 
 If you have translated into your language, please let me know.
 

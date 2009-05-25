@@ -7,7 +7,7 @@ jQuery(document).ready(function () {
 //	var i = 0;
 //	showImg(i);
 
-	jQuery('a[@rel*=lightbox]').lightBox();
+	jQuery('a[rel*=lightbox]').lightBox();
 	jQuery('.gallery1 a').lightBox({captionPosition:'gallery'});
 	jQuery('.gallery1 a').tooltip({track:true, delay:0, showURL: false});
   
