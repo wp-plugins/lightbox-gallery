@@ -25,7 +25,7 @@ Localization
 
 * Italian (it_IT) - [Gianni Diurno](http://gidibao.net/)
 * Japanese (ja) - [Hiroaki Miyashita](http://wordpressgogo.com/)
-* Russian (by_BY) - [Fat Cow](http://www.fatcow.com/)
+* Russian (ru_RU) - [Fat Cow](http://www.fatcow.com/)
 
 If you have translated into your language, please let me know.
 
