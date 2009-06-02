@@ -4,7 +4,7 @@ Donate link: http://wordpressgogo.com/development/lightbox-gallery.html
 Tags: lightbox, gallery, image, images, album, photo, photos, picture, pictures
 Requires at least: 2.5
 Tested up to: 2.8 Beta 2
-Stable tag: 0.4.3
+Stable tag: 0.4.4
 
 This plugin changes the view of galleries to the lightbox.
 
@@ -23,6 +23,7 @@ You can also make regular images appear in a lightbox. See Faq.
 
 Localization
 
+* French (fr_FR) - [BenLeTibetain](http://www.benletibetain.net/)
 * Italian (it_IT) - [Gianni Diurno](http://gidibao.net/)
 * Japanese (ja) - [Hiroaki Miyashita](http://wordpressgogo.com/)
 * Russian (ru_RU) - [Fat Cow](http://www.fatcow.com/)
