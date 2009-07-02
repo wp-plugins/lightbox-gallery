@@ -4,7 +4,7 @@ Plugin Name: Lightbox Gallery
 Plugin URI: http://wordpressgogo.com/development/lightbox-gallery.html
 Description: Changes to the lightbox view in galleries.
 Author: Hiroaki Miyashita
-Version: 0.4.4
+Version: 0.4.5
 Author URI: http://wordpressgogo.com/
 */
 
@@ -131,7 +131,7 @@ function add_lightbox_gallery_jquery() {
 	if ( !is_admin() && $flag ) {
 		wp_enqueue_script( 'jquery');
 		wp_enqueue_script( 'dimensions', '/' . PLUGINDIR . '/' . $plugin_dir . '/js/jquery.dimensions.js', array('jquery') );
-		wp_enqueue_script( 'bgtiframe', '/' . PLUGINDIR . '/' . $plugin_dir . '/js/jquery.bgiframe.js', array('jquery') ) ;
+		wp_enqueue_script( 'bgiframe', '/' . PLUGINDIR . '/' . $plugin_dir . '/js/jquery.bgiframe.js', array('jquery') ) ;
 		wp_enqueue_script( 'lightbox', '/' . PLUGINDIR . '/' . $plugin_dir . '/js/jquery.lightbox.js', array('jquery') );
 		wp_enqueue_script( 'tooltip', '/' . PLUGINDIR . '/' . $plugin_dir . '/js/jquery.tooltip.js', array('jquery') );
 		if (@file_exists(TEMPLATEPATH.'/lightbox-gallery.js')) {
