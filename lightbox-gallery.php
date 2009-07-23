@@ -4,7 +4,7 @@ Plugin Name: Lightbox Gallery
 Plugin URI: http://wordpressgogo.com/development/lightbox-gallery.html
 Description: Changes to the lightbox view in galleries.
 Author: Hiroaki Miyashita
-Version: 0.4.5
+Version: 0.4.6
 Author URI: http://wordpressgogo.com/
 */
 
@@ -171,11 +171,11 @@ function lightbox_gallery_admin() {
 			endif;
 		endforeach;
 		update_option('lightbox_gallery_data', $options);
-		$message = __('Options updated.', 'lightbox_gallery');
+		$message = __('Options updated.', 'lightbox-gallery');
 	elseif ($_POST['lightbox_gallery_delete_options_submit']) :
 		delete_option('lightbox_gallery_data');
 		$options = get_option('lightbox_gallery_data');
-		$message = __('Options deleted.', 'lightbox_gallery');
+		$message = __('Options deleted.', 'lightbox-gallery');
 	endif;
 ?>
 <?php if ($message) : ?>

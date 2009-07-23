@@ -3,8 +3,8 @@ Contributors: Hiroaki Miyashita
 Donate link: http://wordpressgogo.com/development/lightbox-gallery.html
 Tags: lightbox, gallery, image, images, album, photo, photos, picture, pictures
 Requires at least: 2.5
-Tested up to: 2.8.1
-Stable tag: 0.4.5
+Tested up to: 2.8.2
+Stable tag: 0.4.6
 
 This plugin changes the view of galleries to the lightbox.
 
@@ -23,10 +23,12 @@ You can also make regular images appear in a lightbox. See Faq.
 
 Localization
 
+* Spanish (es_ES) - [Daniel Tarrero](http://www.bluebrain.es/)
 * French (fr_FR) - [BenLeTibetain](http://www.benletibetain.net/)
 * Italian (it_IT) - [Gianni Diurno](http://gidibao.net/)
 * Japanese (ja) - [Hiroaki Miyashita](http://wordpressgogo.com/)
 * Dutch (nl_NL) - [Peter Arends](http://www.peterarends.net/)
+* Polish (pl_PL) - Otmar
 * Russian (ru_RU) - [Fat Cow](http://www.fatcow.com/)
 
 If you have translated into your language, please let me know.
@@ -41,8 +43,6 @@ If you have translated into your language, please let me know.
 
 Lightbox Gallery will load 'lightbox-gallery.css' and 'lightbox-gallery.js' from your theme's directory if they exist. 
 If they don't exist, they will just load the default 'lightbox-gallery.css' and 'lightbox-gallery.js' that come with Lightbox Gallery. This will allow you to upgrade Lightbox Gallery without worrying about overwriting your lightbox gallery styles that you have created.
-
-== Known Issues / Bugs ==
 
 == Frequently Asked Questions ==
 * How can I make regular images appear in a lightbox without [gallery] shortcode?
@@ -115,6 +115,8 @@ You can use the navigation option almost same as the `wp_link_pages` function.
 If you would like not to show the navigation, set `0`. The default is `1`.
 
 [gallery num="10" pagenavi="0"]
+
+== Known Issues / Bugs ==
 
 == Uninstall ==
 
