@@ -4,7 +4,7 @@ Donate link: http://wordpressgogo.com/development/lightbox-gallery.html
 Tags: lightbox, gallery, image, images, album, photo, photos, picture, pictures
 Requires at least: 2.5
 Tested up to: 2.8.2
-Stable tag: 0.4.6
+Stable tag: 0.4.7
 
 This plugin changes the view of galleries to the lightbox.
 
@@ -115,6 +115,65 @@ You can use the navigation option almost same as the `wp_link_pages` function.
 If you would like not to show the navigation, set `0`. The default is `1`.
 
 [gallery num="10" pagenavi="0"]
+
+== Changelog ==
+
+= 0.4.7 =   
+* Default thumbnail size and lightbox size.
+
+= 0.4.6 =   
+* Spanish (es_ES) - Daniel Tarrero
+* Polish (pl_PL) - Otmar
+* Bugfix: translation miss.
+
+= 0.4.5 =
+* Dutch (nl_NL) - Peter Arends
+
+= 0.4.4 =
+* French (fr_FR) - BenLeTibetain
+
+= 0.4.3 =
+* Bugfix: JavaScript.
+* Russian (ru_RU) - Fat Cow
+
+= 0.4.2 =
+* Bugfix: page navigation.
+
+= 0.4.1 =
+* Loads `lightbox-gallery.js` from your theme directory.
+* Italian (it_IT) - Gianni Diurno.
+
+= 0.4 =
+* `from` and `num` attributes for gallery division.
+* Additional settings are set in the option page.
+
+= 0.3.1 =
+* Bugfix.
+
+= 0.3 =
+* Bugfix.
+* Output jquery and lightbox scripts only in the replated page.
+
+= 0.2.6 =
+* Bugfix.
+
+= 0.2.5 =
+* Bugfix.
+
+= 0.2.4 =
+* `nofollow` attribute.
+
+= 0.2.2 =
+* ISO attribute
+
+= 0.2.1 =
+* `class` attribute.
+
+= 0.2 =
+* `rel="lightbox"` to make regular images appear in a lightbox.
+
+= 0.1 =
+* Initial release.
 
 == Known Issues / Bugs ==
 

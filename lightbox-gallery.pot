@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Lightbox Gallery\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-04-27 20:36+0900\n"
-"PO-Revision-Date: 2009-04-27 20:36+0900\n"
+"POT-Creation-Date: 2009-07-28 23:15+0900\n"
+"PO-Revision-Date: 2009-07-28 23:15+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -13,134 +13,142 @@ msgstr ""
 "X-Poedit-Basepath: ../\n"
 "X-Poedit-SearchPath-0: lightbox-gallery\n"
 
-#: lightbox-gallery/lightbox-gallery.php:147
+#: lightbox-gallery/lightbox-gallery.php:152
 msgid "Settings"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:155
-#: lightbox-gallery/lightbox-gallery.php:181
+#: lightbox-gallery/lightbox-gallery.php:160
+#: lightbox-gallery/lightbox-gallery.php:186
 msgid "Lightbox Gallery"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:169
+#: lightbox-gallery/lightbox-gallery.php:174
 msgid "Options updated."
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:173
+#: lightbox-gallery/lightbox-gallery.php:178
 msgid "Options deleted."
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:187
-#: lightbox-gallery/lightbox-gallery.php:231
-#: lightbox-gallery/lightbox-gallery.php:247
+#: lightbox-gallery/lightbox-gallery.php:192
+#: lightbox-gallery/lightbox-gallery.php:244
+#: lightbox-gallery/lightbox-gallery.php:260
 msgid "Click to toggle"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:188
+#: lightbox-gallery/lightbox-gallery.php:193
 msgid "Lightbox Gallery Options"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:194
+#: lightbox-gallery/lightbox-gallery.php:199
 msgid "In case that you would like to use the lightbox in certain categories (comma-deliminated)"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:198
+#: lightbox-gallery/lightbox-gallery.php:203
 msgid "In case that you would like to use the lightbox in certain pages (comma-deliminated)"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:202
+#: lightbox-gallery/lightbox-gallery.php:207
 msgid "In case that you would like to disable to load the lightbox-gallery.css"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:203
+#: lightbox-gallery/lightbox-gallery.php:208
 msgid "Do not use the lightbox-gallery.css"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:206
+#: lightbox-gallery/lightbox-gallery.php:211
 msgid "In case that you would like to disable to load the jquery.lightbox.css"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:207
+#: lightbox-gallery/lightbox-gallery.php:212
 msgid "Do not use the jquery.lightbox.css"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:210
+#: lightbox-gallery/lightbox-gallery.php:215
 msgid "In case that you would like to disable to load the jquery.tooltip.css"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:211
+#: lightbox-gallery/lightbox-gallery.php:216
 msgid "Do not use the jquery.tooltip.css"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:214
+#: lightbox-gallery/lightbox-gallery.php:219
 msgid "In case that you would like to disable to load the column inline css"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:215
+#: lightbox-gallery/lightbox-gallery.php:220
 msgid "Do not use the column inline css"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:218
+#: lightbox-gallery/lightbox-gallery.php:223
 msgid "In case that you would like to set the default number of columns"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:222
+#: lightbox-gallery/lightbox-gallery.php:227
+msgid "In case that you would like to set the default thumbnail size"
+msgstr ""
+
+#: lightbox-gallery/lightbox-gallery.php:231
+msgid "In case that you would like to set the default lightbox size"
+msgstr ""
+
+#: lightbox-gallery/lightbox-gallery.php:235
 msgid "Update Options &raquo;"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:232
+#: lightbox-gallery/lightbox-gallery.php:245
 msgid "Delete Options"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:234
+#: lightbox-gallery/lightbox-gallery.php:247
 msgid "Are you sure to delete options? Options you set will be deleted."
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:238
+#: lightbox-gallery/lightbox-gallery.php:251
 msgid "Delete Options &raquo;"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:248
+#: lightbox-gallery/lightbox-gallery.php:261
 msgid "Donation"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:250
+#: lightbox-gallery/lightbox-gallery.php:263
 msgid "If you liked this plugin, please make a donation via paypal! Any amount is welcome. Your support is much appreciated."
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:324
+#: lightbox-gallery/lightbox-gallery.php:343
 msgid "Pages:"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:326
+#: lightbox-gallery/lightbox-gallery.php:345
 msgid "Next page"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:327
+#: lightbox-gallery/lightbox-gallery.php:346
 msgid "Previous page"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:379
+#: lightbox-gallery/lightbox-gallery.php:399
 msgid "camera"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:381
+#: lightbox-gallery/lightbox-gallery.php:401
 msgid "aperture"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:383
+#: lightbox-gallery/lightbox-gallery.php:403
 msgid "focal_length"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:385
+#: lightbox-gallery/lightbox-gallery.php:405
 msgid "ISO"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:389
+#: lightbox-gallery/lightbox-gallery.php:409
 msgid "shutter_speed"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:392
+#: lightbox-gallery/lightbox-gallery.php:412
 msgid "created_timestamp"
 msgstr ""
 

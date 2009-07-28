@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Lightbox Gallery\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-07-23 10:11+0900\n"
-"PO-Revision-Date: 2009-07-23 10:11+0900\n"
+"POT-Creation-Date: 2009-07-28 23:13+0900\n"
+"PO-Revision-Date: 2009-07-28 23:14+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -34,8 +34,8 @@ msgid "Options deleted."
 msgstr "オプションは削除されました。"
 
 #: lightbox-gallery/lightbox-gallery.php:192
-#: lightbox-gallery/lightbox-gallery.php:236
-#: lightbox-gallery/lightbox-gallery.php:252
+#: lightbox-gallery/lightbox-gallery.php:244
+#: lightbox-gallery/lightbox-gallery.php:260
 msgid "Click to toggle"
 msgstr "クリックで切替"
 
@@ -88,62 +88,70 @@ msgid "In case that you would like to set the default number of columns"
 msgstr "デフォルトのコラム数をセットする場合"
 
 #: lightbox-gallery/lightbox-gallery.php:227
+msgid "In case that you would like to set the default thumbnail size"
+msgstr "デフォルトのサムネイルサイズをセットする場合"
+
+#: lightbox-gallery/lightbox-gallery.php:231
+msgid "In case that you would like to set the default lightbox size"
+msgstr "デフォルトのlightboxサイズをセットする場合"
+
+#: lightbox-gallery/lightbox-gallery.php:235
 msgid "Update Options &raquo;"
 msgstr "オプションを更新する &raquo;"
 
-#: lightbox-gallery/lightbox-gallery.php:237
+#: lightbox-gallery/lightbox-gallery.php:245
 msgid "Delete Options"
 msgstr "オプションを削除する"
 
-#: lightbox-gallery/lightbox-gallery.php:239
+#: lightbox-gallery/lightbox-gallery.php:247
 msgid "Are you sure to delete options? Options you set will be deleted."
 msgstr "本当にオプションを削除しますか？設定したオプションは削除されます。"
 
-#: lightbox-gallery/lightbox-gallery.php:243
+#: lightbox-gallery/lightbox-gallery.php:251
 msgid "Delete Options &raquo;"
 msgstr "オプションを削除する &raquo;"
 
-#: lightbox-gallery/lightbox-gallery.php:253
+#: lightbox-gallery/lightbox-gallery.php:261
 msgid "Donation"
 msgstr "寄付"
 
-#: lightbox-gallery/lightbox-gallery.php:255
+#: lightbox-gallery/lightbox-gallery.php:263
 msgid "If you liked this plugin, please make a donation via paypal! Any amount is welcome. Your support is much appreciated."
 msgstr "このプラグインをお気に召しましたら、Paypalよりご寄付をよろしくお願いいたします。"
 
-#: lightbox-gallery/lightbox-gallery.php:329
+#: lightbox-gallery/lightbox-gallery.php:343
 msgid "Pages:"
 msgstr "ページ："
 
-#: lightbox-gallery/lightbox-gallery.php:331
+#: lightbox-gallery/lightbox-gallery.php:345
 msgid "Next page"
 msgstr "次のページ"
 
-#: lightbox-gallery/lightbox-gallery.php:332
+#: lightbox-gallery/lightbox-gallery.php:346
 msgid "Previous page"
 msgstr "前のページ"
 
-#: lightbox-gallery/lightbox-gallery.php:385
+#: lightbox-gallery/lightbox-gallery.php:399
 msgid "camera"
 msgstr "機種"
 
-#: lightbox-gallery/lightbox-gallery.php:387
+#: lightbox-gallery/lightbox-gallery.php:401
 msgid "aperture"
 msgstr "絞り値"
 
-#: lightbox-gallery/lightbox-gallery.php:389
+#: lightbox-gallery/lightbox-gallery.php:403
 msgid "focal_length"
 msgstr "焦点距離"
 
-#: lightbox-gallery/lightbox-gallery.php:391
+#: lightbox-gallery/lightbox-gallery.php:405
 msgid "ISO"
 msgstr "ISO"
 
-#: lightbox-gallery/lightbox-gallery.php:395
+#: lightbox-gallery/lightbox-gallery.php:409
 msgid "shutter_speed"
 msgstr "シャッタースピード"
 
-#: lightbox-gallery/lightbox-gallery.php:398
+#: lightbox-gallery/lightbox-gallery.php:412
 msgid "created_timestamp"
 msgstr "撮影日時"
 

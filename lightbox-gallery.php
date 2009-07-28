@@ -4,7 +4,7 @@ Plugin Name: Lightbox Gallery
 Plugin URI: http://wordpressgogo.com/development/lightbox-gallery.html
 Description: Changes to the lightbox view in galleries.
 Author: Hiroaki Miyashita
-Version: 0.4.6
+Version: 0.4.7
 Author URI: http://wordpressgogo.com/
 */
 
@@ -224,6 +224,14 @@ function lightbox_gallery_admin() {
 <input type="text" name="lightbox_gallery_columns" id="lightbox_gallery_columns" value="<?php echo $options['global_settings']['lightbox_gallery_columns']; ?>" size="3" /></p>
 </td></tr>
 <tr><td>
+<p><label for="lightbox_gallery_thumbnailsize"><?php _e('In case that you would like to set the default thumbnail size', 'lightbox-gallery'); ?></label>:<br />
+<input type="text" name="lightbox_gallery_thumbnailsize" id="lightbox_gallery_thumbnailsize" value="<?php echo $options['global_settings']['lightbox_gallery_thumbnailsize']; ?>" /> thumbnail medium large full</p>
+</td></tr>
+<tr><td>
+<p><label for="lightbox_gallery_lightboxsize"><?php _e('In case that you would like to set the default lightbox size', 'lightbox-gallery'); ?></label>:<br />
+<input type="text" name="lightbox_gallery_lightboxsize" id="lightbox_gallery_lightboxsize" value="<?php echo $options['global_settings']['lightbox_gallery_lightboxsize']; ?>" /> thumbnail medium large full</p>
+</td></tr>
+<tr><td>
 <p><input type="submit" name="lightbox_gallery_global_settings_submit" value="<?php _e('Update Options &raquo;', 'lightbox-gallery'); ?>" class="button-primary" /></p>
 </td></tr>
 </tbody>
@@ -309,7 +317,13 @@ function lightbox_gallery($attr) {
 	
 	if ( is_numeric($options['global_settings']['lightbox_gallery_columns']) )  $columns = $options['global_settings']['lightbox_gallery_columns'];
 	else $columns = 3;
-			
+	
+	if ( $options['global_settings']['lightbox_gallery_thumbnailsize'] )  $size = $options['global_settings']['lightbox_gallery_thumbnailsize'];
+	else $size = 'thumbnail';
+
+	if ( $options['global_settings']['lightbox_gallery_lightboxsize'] )  $lightboxsize = $options['global_settings']['lightbox_gallery_lightboxsize'];
+	else $lightboxsize = 'medium';
+		
 	extract(shortcode_atts(array(
 		'order'      => 'ASC',
 		'orderby'    => 'menu_order ID',
@@ -318,8 +332,8 @@ function lightbox_gallery($attr) {
 		'icontag'    => 'dt',
 		'captiontag' => 'dd',
 		'columns'    => $columns,
-		'size'       => 'thumbnail',
-		'lightboxsize' => 'medium',
+		'size'       => $size,
+		'lightboxsize' => $lightboxsize,
 		'meta'       => 'false',
 		'class'      => 'gallery1',
 		'nofollow'   => false,
