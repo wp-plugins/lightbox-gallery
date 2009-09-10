@@ -1,10 +1,10 @@
 === Lightbox Gallery ===
 Contributors: Hiroaki Miyashita
-Donate link: http://wordpressgogo.com/development/lightbox-gallery.html
+Donate link: http://wpgogo.com/development/lightbox-gallery.html
 Tags: lightbox, gallery, image, images, album, photo, photos, picture, pictures
 Requires at least: 2.5
-Tested up to: 2.8.2
-Stable tag: 0.4.7
+Tested up to: 2.8.4
+Stable tag: 0.5
 
 This plugin changes the view of galleries to the lightbox.
 
@@ -23,6 +23,8 @@ You can also make regular images appear in a lightbox. See Faq.
 
 Localization
 
+* Brazilian Portuguese (pt_BR) - [Emmanuel Carvalho](http://www.emmanuelcarvalho.com.br/)
+* Belorussian (by_BY) - [ilyuha](http://antsar.info/)
 * Spanish (es_ES) - [Daniel Tarrero](http://www.bluebrain.es/)
 * French (fr_FR) - [BenLeTibetain](http://www.benletibetain.net/)
 * Italian (it_IT) - [Gianni Diurno](http://gidibao.net/)
@@ -118,10 +120,15 @@ If you would like not to show the navigation, set `0`. The default is `1`.
 
 == Changelog ==
 
-= 0.4.7 =   
+= 0.5 =
+* Brazilian Portuguese (pt_BR) - Emmanuel Carvalho
+* Belorussian (be_BY) - ilyuha
+* Combine jquery.lightbox.css and jquery.tooltip.css into lightbox-gallery.css
+
+= 0.4.7 =
 * Default thumbnail size and lightbox size.
 
-= 0.4.6 =   
+= 0.4.6 =
 * Spanish (es_ES) - Daniel Tarrero
 * Polish (pl_PL) - Otmar
 * Bugfix: translation miss.

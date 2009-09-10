@@ -4,8 +4,8 @@ Plugin Name: Lightbox Gallery
 Plugin URI: http://wordpressgogo.com/development/lightbox-gallery.html
 Description: Changes to the lightbox view in galleries.
 Author: Hiroaki Miyashita
-Version: 0.4.7
-Author URI: http://wordpressgogo.com/
+Version: 0.5
+Author URI: http://wpgogo.com/
 */
 
 add_action( 'init', 'lightbox_gallery_textdomain' );
@@ -75,12 +75,6 @@ function add_lightbox_gallery_head() {
 			} else {
 				echo '<link rel="stylesheet" type="text/css" href="' . get_settings('siteurl') . '/' . PLUGINDIR . '/' . $plugin_dir . '/lightbox-gallery.css" />'."\n";
 			}
-		endif;
-		if ( !$options['global_settings']['lightbox_gallery_disable_lightbox_css'] ) :
-			echo '<link rel="stylesheet" type="text/css" href="' . get_settings('siteurl') . '/' . PLUGINDIR . '/' . $plugin_dir . '/js/jquery.lightbox.css" />'."\n";
-		endif;
-		if ( !$options['global_settings']['lightbox_gallery_disable_tooltip_css'] ) :
-			echo '<link rel="stylesheet" type="text/css" href="' . get_settings('siteurl') . '/' . PLUGINDIR . '/' . $plugin_dir . '/js/jquery.tooltip.css" />'."\n";
 		endif;
 	}
 }
@@ -206,14 +200,6 @@ function lightbox_gallery_admin() {
 <tr><td>
 <p><label for="lightbox_gallery_disable_lightbox_gallery_css"><?php _e('In case that you would like to disable to load the lightbox-gallery.css', 'lightbox-gallery'); ?></label>:<br />
 <input type="checkbox" name="lightbox_gallery_disable_lightbox_gallery_css" id="lightbox_gallery_disable_lightbox_gallery_css" value="1" <?php if ($options['global_settings']['lightbox_gallery_disable_lightbox_gallery_css']) { echo 'checked="checked"'; } ?> /> <?php _e('Do not use the lightbox-gallery.css', 'lightbox-gallery'); ?></p>
-</td></tr>
-<tr><td>
-<p><label for="lightbox_gallery_disable_lightbox_css"><?php _e('In case that you would like to disable to load the jquery.lightbox.css', 'lightbox-gallery'); ?></label>:<br />
-<input type="checkbox" name="lightbox_gallery_disable_lightbox_css" id="lightbox_gallery_disable_lightbox_css" value="1" <?php if ($options['global_settings']['lightbox_gallery_disable_lightbox_css']) { echo 'checked="checked"'; } ?> /> <?php _e('Do not use the jquery.lightbox.css', 'lightbox-gallery'); ?></p>
-</td></tr>
-<tr><td>
-<p><label for="lightbox_gallery_disable_tooltip_css"><?php _e('In case that you would like to disable to load the jquery.tooltip.css', 'lightbox-gallery'); ?></label>:<br />
-<input type="checkbox" name="lightbox_gallery_disable_tooltip_css" id="lightbox_gallery_disable_tooltip_css" value="1" <?php if ($options['global_settings']['lightbox_gallery_disable_tooltip_css']) { echo 'checked="checked"'; } ?> /> <?php _e('Do not use the jquery.tooltip.css', 'lightbox-gallery'); ?></p>
 </td></tr>
 <tr><td>
 <p><label for="lightbox_gallery_disable_column_css"><?php _e('In case that you would like to disable to load the column inline css', 'lightbox-gallery'); ?></label>:<br />
