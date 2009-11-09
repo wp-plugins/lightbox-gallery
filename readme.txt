@@ -4,7 +4,7 @@ Donate link: http://wpgogo.com/development/lightbox-gallery.html
 Tags: lightbox, gallery, image, images, album, photo, photos, picture, pictures, jQuery, Highslide
 Requires at least: 2.5
 Tested up to: 2.8.5
-Stable tag: 0.6
+Stable tag: 0.6.1
 
 This plugin changes the view of galleries to the lightbox.
 
@@ -117,6 +117,9 @@ If you would like not to show the navigation, set `0`. The default is `1`.
 [gallery num="10" pagenavi="0"]
 
 == Changelog ==
+
+= 0.6.1 =
+* Bugfix: JavaScript error.
 
 = 0.6 =
 * If you set the `class` attribute into [gallery], galleries are handled separately. ex) [gallery class="gallery2"]

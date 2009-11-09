@@ -4,7 +4,7 @@ Plugin Name: Lightbox Gallery
 Plugin URI: http://wpgogo.com/development/lightbox-gallery.html
 Description: Changes to the lightbox view in galleries.
 Author: Hiroaki Miyashita
-Version: 0.6
+Version: 0.6.1
 Author URI: http://wpgogo.com/
 */
 
@@ -126,7 +126,7 @@ function add_lightbox_gallery_jquery() {
 	endif;
 	
 	if ( !is_admin() && $flag ) :
-		wp_enqueue_script( 'jquery', '/wp-includes/js/jquery/jquery.js', false, '', $in_footer );
+		wp_enqueue_script( 'jquery' );
 		if ( $options['global_settings']['lightbox_gallery_loading_type'] == 'highslide' ) :
 			wp_enqueue_script( 'highslide', '/' . PLUGINDIR . '/' . $plugin_dir . '/js/highslide.js', false, '', $in_footer );
 		else :
@@ -414,7 +414,7 @@ function lightbox_gallery($attr) {
 	
 	$output = apply_filters('gallery_style', $column_css."<div class='gallery {$class}'>");
 	
-	if ( $class ) :
+	if ( $class && $options['global_settings']['lightbox_gallery_loading_type'] != 'highslide' ) :
 		$output .= '<script type="text/javascript">
 // <![CDATA[
 	jQuery(document).ready(function () {
