@@ -4,7 +4,7 @@ Plugin Name: Lightbox Gallery
 Plugin URI: http://wpgogo.com/development/lightbox-gallery.html
 Description: Changes to the lightbox view in galleries.
 Author: Hiroaki Miyashita
-Version: 0.6.1
+Version: 0.6.2
 Author URI: http://wpgogo.com/
 */
 
@@ -36,7 +36,9 @@ function add_lightbox_gallery_head() {
 
 	$flag = false;
 
-	if ( $options['global_settings']['lightbox_gallery_categories'] && (is_category() || is_single() ) ) :
+	if ( $options['global_settings']['lightbox_gallery_enforce_loading_scripts'] ) :
+		$flag = true;
+	elseif ( $options['global_settings']['lightbox_gallery_categories'] && (is_category() || is_single() ) ) :
 		$categories = get_the_category();
 		$cats = array();
 		foreach( $categories as $val ) :
@@ -93,7 +95,9 @@ function add_lightbox_gallery_jquery() {
 	
 	$flag = false;
 
-	if ( $options['global_settings']['lightbox_gallery_categories'] && (is_category() || is_single() ) ) :
+	if ( $options['global_settings']['lightbox_gallery_enforce_loading_scripts'] ) :
+		$flag = true;
+	elseif ( $options['global_settings']['lightbox_gallery_categories'] && (is_category() || is_single() ) ) :
 		$categories = get_the_category();
 		$cats = array();
 		foreach( $categories as $val ) :
@@ -212,6 +216,10 @@ function lightbox_gallery_admin() {
 <tr><td>
 <p><label for="lightbox_gallery_pages"><?php _e('In case that you would like to use the lightbox in certain pages (comma-deliminated)', 'lightbox-gallery'); ?></label>:<br />
 <input type="text" name="lightbox_gallery_pages" id="lightbox_gallery_pages" value="<?php echo $options['global_settings']['lightbox_gallery_pages']; ?>" /></p>
+</td></tr>
+<tr><td>
+<p><label for="lightbox_gallery_enforce_loading_scripts"><?php _e('Enforce loading the lightbox gallery scripts', 'lightbox-gallery'); ?></label>:<br />
+<input type="checkbox" name="lightbox_gallery_enforce_loading_scripts" id="lightbox_gallery_enforce_loading_scripts" value="1" <?php if ($options['global_settings']['lightbox_gallery_enforce_loading_scripts']) { echo 'checked="checked"'; } ?> /> <?php _e('The lightbox gallery scripts are loaded in every page', 'lightbox-gallery'); ?></p>
 </td></tr>
 <tr><td>
 <p><label for="lightbox_gallery_disable_lightbox_gallery_css"><?php _e('In case that you would like to disable to load the lightbox-gallery.css', 'lightbox-gallery'); ?></label>:<br />

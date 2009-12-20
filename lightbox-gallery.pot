@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Lightbox Gallery\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-11-08 19:00+0900\n"
-"PO-Revision-Date: 2009-11-08 19:00+0900\n"
+"POT-Creation-Date: 2009-11-19 17:29+0900\n"
+"PO-Revision-Date: 2009-11-19 17:29+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -13,155 +13,163 @@ msgstr ""
 "X-Poedit-Basepath: ../\n"
 "X-Poedit-SearchPath-0: lightbox-gallery\n"
 
-#: lightbox-gallery/lightbox-gallery.php:160
+#: lightbox-gallery/lightbox-gallery.php:157
 msgid "Settings"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:168
-#: lightbox-gallery/lightbox-gallery.php:194
+#: lightbox-gallery/lightbox-gallery.php:165
+#: lightbox-gallery/lightbox-gallery.php:191
 msgid "Lightbox Gallery"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:182
+#: lightbox-gallery/lightbox-gallery.php:179
 msgid "Options updated."
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:186
+#: lightbox-gallery/lightbox-gallery.php:183
 msgid "Options deleted."
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:200
-#: lightbox-gallery/lightbox-gallery.php:261
-#: lightbox-gallery/lightbox-gallery.php:277
+#: lightbox-gallery/lightbox-gallery.php:197
+#: lightbox-gallery/lightbox-gallery.php:262
+#: lightbox-gallery/lightbox-gallery.php:278
 msgid "Click to toggle"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:201
+#: lightbox-gallery/lightbox-gallery.php:198
 msgid "Lightbox Gallery Options"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:210
+#: lightbox-gallery/lightbox-gallery.php:207
 msgid "Choose the gallery loading type"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:211
+#: lightbox-gallery/lightbox-gallery.php:208
 msgid "Lightbox"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:212
+#: lightbox-gallery/lightbox-gallery.php:209
 msgid "Highslide JS"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:213
+#: lightbox-gallery/lightbox-gallery.php:210
 #, php-format
 msgid "Caution: Highslide JS is licensed under a Creative Commons Attribution-NonCommercial 2.5 License. You need the author's permission to use Highslide JS on commercial websites. <a href=\"%s\" target=\"_blank\">Please look at the author's website.</a>"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:216
+#: lightbox-gallery/lightbox-gallery.php:213
 msgid "In case that you would like to use the lightbox in certain categories (comma-deliminated)"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:220
+#: lightbox-gallery/lightbox-gallery.php:217
 msgid "In case that you would like to use the lightbox in certain pages (comma-deliminated)"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:224
-msgid "In case that you would like to disable to load the lightbox-gallery.css"
+#: lightbox-gallery/lightbox-gallery.php:221
+msgid "Enforce loading the lightbox gallery scripts"
+msgstr ""
+
+#: lightbox-gallery/lightbox-gallery.php:222
+msgid "The lightbox gallery scripts are loaded in every page"
 msgstr ""
 
 #: lightbox-gallery/lightbox-gallery.php:225
+msgid "In case that you would like to disable to load the lightbox-gallery.css"
+msgstr ""
+
+#: lightbox-gallery/lightbox-gallery.php:226
 msgid "Do not use the lightbox-gallery.css"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:228
+#: lightbox-gallery/lightbox-gallery.php:229
 msgid "In case that you would like to disable to load the column inline css"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:229
+#: lightbox-gallery/lightbox-gallery.php:230
 msgid "Do not use the column inline css"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:232
+#: lightbox-gallery/lightbox-gallery.php:233
 msgid "In case that you would like to set the default number of columns"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:236
+#: lightbox-gallery/lightbox-gallery.php:237
 msgid "In case that you would like to set the default thumbnail size"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:240
+#: lightbox-gallery/lightbox-gallery.php:241
 msgid "In case that you would like to set the default lightbox size"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:247
+#: lightbox-gallery/lightbox-gallery.php:248
 msgid "Choose the script loading point"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:248
+#: lightbox-gallery/lightbox-gallery.php:249
 msgid "Header"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:249
+#: lightbox-gallery/lightbox-gallery.php:250
 msgid "Footer"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:252
+#: lightbox-gallery/lightbox-gallery.php:253
 msgid "Update Options &raquo;"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:262
+#: lightbox-gallery/lightbox-gallery.php:263
 msgid "Delete Options"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:264
+#: lightbox-gallery/lightbox-gallery.php:265
 msgid "Are you sure to delete options? Options you set will be deleted."
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:268
+#: lightbox-gallery/lightbox-gallery.php:269
 msgid "Delete Options &raquo;"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:278
+#: lightbox-gallery/lightbox-gallery.php:279
 msgid "Donation"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:280
+#: lightbox-gallery/lightbox-gallery.php:281
 msgid "If you liked this plugin, please make a donation via paypal! Any amount is welcome. Your support is much appreciated."
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:362
+#: lightbox-gallery/lightbox-gallery.php:363
 msgid "Pages:"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:364
+#: lightbox-gallery/lightbox-gallery.php:365
 msgid "Next page"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:365
+#: lightbox-gallery/lightbox-gallery.php:366
 msgid "Previous page"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:435
+#: lightbox-gallery/lightbox-gallery.php:448
 msgid "camera"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:437
+#: lightbox-gallery/lightbox-gallery.php:450
 msgid "aperture"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:439
+#: lightbox-gallery/lightbox-gallery.php:452
 msgid "focal_length"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:441
+#: lightbox-gallery/lightbox-gallery.php:454
 msgid "ISO"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:445
+#: lightbox-gallery/lightbox-gallery.php:458
 msgid "shutter_speed"
 msgstr ""
 
-#: lightbox-gallery/lightbox-gallery.php:448
+#: lightbox-gallery/lightbox-gallery.php:461
 msgid "created_timestamp"
 msgstr ""
 
