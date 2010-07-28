@@ -3,8 +3,8 @@ Contributors: Hiroaki Miyashita
 Donate link: http://wpgogo.com/development/lightbox-gallery.html
 Tags: lightbox, gallery, image, images, album, photo, photos, picture, pictures, jQuery, Highslide
 Requires at least: 2.5
-Tested up to: 2.9
-Stable tag: 0.6.2
+Tested up to: 3.0.1
+Stable tag: 0.6.3
 
 This plugin changes the view of galleries to the lightbox.
 
@@ -28,6 +28,7 @@ Localization
 * Belorussian (by_BY) - [ilyuha](http://antsar.info/)
 * Spanish (es_ES) - [Daniel Tarrero](http://www.bluebrain.es/)
 * French (fr_FR) - [BenLeTibetain](http://www.benletibetain.net/)
+* Hungarian (hu_HU) - [Zsolt Vereb](http://www.google.com/profiles/zsolt.vereb) and [Feriman](http://feriman.com/)
 * Italian (it_IT) - [Gianni Diurno](http://gidibao.net/)
 * Japanese (ja) - [Hiroaki Miyashita](http://wordpressgogo.com/)
 * Dutch (nl_NL) - [Peter Arends](http://www.peterarends.net/)
@@ -117,6 +118,10 @@ If you would like not to show the navigation, set `0`. The default is `1`.
 [gallery num="10" pagenavi="0"]
 
 == Changelog ==
+
+= 0.6.3 =
+* jQuery lightBox plugin license changed.
+* Hungarian (hu_HU) - Zsolt Vereb and Feriman
 
 = 0.6.2 =
 * Enforced loading option of lightbox gallery scripts.

@@ -4,8 +4,25 @@ Plugin Name: Lightbox Gallery
 Plugin URI: http://wpgogo.com/development/lightbox-gallery.html
 Description: Changes to the lightbox view in galleries.
 Author: Hiroaki Miyashita
-Version: 0.6.2
+Version: 0.6.3
 Author URI: http://wpgogo.com/
+*/
+
+/*  Copyright 2009 -2010 Hiroaki Miyashita
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program; if not, write to the Free Software
+    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
 
 add_action( 'init', 'lightbox_gallery_textdomain' );
@@ -162,7 +179,7 @@ function lightbox_gallery_plugin_action_links($links, $file){
 
 
 function lightbox_gallery_admin_menu() {
-	add_options_page(__('Lightbox Gallery', 'lightbox-gallery'), __('Lightbox Gallery', 'lightbox-gallery'), 8, basename(__FILE__), 'lightbox_gallery_admin');
+	add_options_page(__('Lightbox Gallery', 'lightbox-gallery'), __('Lightbox Gallery', 'lightbox-gallery'), 'manage_options', basename(__FILE__), 'lightbox_gallery_admin');
 }
 
 function lightbox_gallery_admin() {
