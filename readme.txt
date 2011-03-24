@@ -4,7 +4,7 @@ Donate link: http://wpgogo.com/development/lightbox-gallery.html
 Tags: lightbox, gallery, image, images, album, photo, photos, picture, pictures, jQuery, Highslide
 Requires at least: 2.5
 Tested up to: 3.1
-Stable tag: 0.6.4
+Stable tag: 0.6.5
 
 This plugin changes the view of galleries to the lightbox.
 
@@ -28,14 +28,14 @@ Localization
 * Belorussian (by_BY) - [ilyuha](http://antsar.info/)
 * Czech (cs_CZ) - [Petufo](http://blog.vlastenci.cz/)
 * Spanish (es_ES) - [Daniel Tarrero](http://www.bluebrain.es/)
-* German (de_DE) - [Michael Wruck and Tacitus Media]
+* German (de_DE) - Michael Wruck and Tacitus Media
 * French (fr_FR) - [BenLeTibetain](http://www.benletibetain.net/)
 * Hungarian (hu_HU) - [Zsolt Vereb](http://www.google.com/profiles/zsolt.vereb) and [Feriman](http://feriman.com/)
 * Italian (it_IT) - [Gianni Diurno](http://gidibao.net/)
 * Japanese (ja) - [Hiroaki Miyashita](http://wordpressgogo.com/)
 * Dutch (nl_NL) - [Peter Arends](http://www.peterarends.net/)
 * Polish (pl_PL) - Otmar
-* Romanian (ro_RO) - [Anunturi Jibo])http://www.jibo.ro/)
+* Romanian (ro_RO) - [Anunturi Jibo](http://www.jibo.ro/)
 * Russian (ru_RU) - [Fat Cow](http://www.fatcow.com/)
 * Turkish (tr_TR) - [Hakan Demiray](http://www.dmry.net/)
 * Ukrainian (uk_UA) - [Vitalij Lew](http://wpp.pp.ua/)
@@ -122,7 +122,7 @@ If you would like not to show the navigation, set `0`. The default is `1`.
 
 == Changelog ==
 
-= 0.6.4 =
+= 0.6.5 =
 * Lightbox and Highslide path.
 * Czech (cs_CZ) - Petufo
 * Germany (de_DE) - Michael Wruck and Tacitus Media
