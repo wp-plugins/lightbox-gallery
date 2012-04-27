@@ -10,7 +10,7 @@ The Lightbox Gallery plugin changes the view of galleries to the lightbox.
 
 == Description ==
 
-**Importance**
+**Importance:**
 From 0.7.1, the default view changed to Colorbox due to the license regulation by the plugin directory. If you would prefer the prior Lightbox to Colorbox, you need to get the script from the setting page.
 
 The Lightbox Gallery plugin changes the view of galleries to the lightbox.
