@@ -4,14 +4,14 @@ Donate link: http://wpgogo.com/development/lightbox-gallery.html
 Tags: lightbox, gallery, galleries, image, images, album, photo, photos, picture, pictures, jQuery, Highslide, Colorbox
 Requires at least: 2.5
 Tested up to: 3.4
-Stable tag: 0.7
+Stable tag: 0.7.1
 
 The Lightbox Gallery plugin changes the view of galleries to the lightbox.
 
 == Description ==
 
 **Importance**
-From 0.7, the default view changed to Colorbox due to the license regulation by the plugin directory. If you would prefer the prior Lightbox to Colorbox, you need to get the script from the setting page.
+From 0.7.1, the default view changed to Colorbox due to the license regulation by the plugin directory. If you would prefer the prior Lightbox to Colorbox, you need to get the script from the setting page.
 
 The Lightbox Gallery plugin changes the view of galleries to the lightbox.
 
@@ -130,7 +130,7 @@ If you would like not to show the navigation, set `0`. The default is `1`.
 
 == Changelog ==
 
-= 0.7 =
+= 0.7.1 =
 * The default view changed to Colorbox.
 * Slovak (sk_SK) - Viliam Brozman
 
