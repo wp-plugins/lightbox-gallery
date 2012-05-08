@@ -1,4 +1,4 @@
-if ( jQuery.lightBox && typeof lightbox_path == "undefined" ) var lightbox_path = 'http://'+location.hostname+'/wp-content/plugins/lightbox-gallery/';
+if ( typeof lightbox_path == "undefined" ) var lightbox_path = 'http://'+location.hostname+'/wp-content/plugins/lightbox-gallery/';
 if ( typeof hs != "undefined" ) {
 	if ( typeof graphicsDir != "undefined" ) hs.graphicsDir = graphicsDir;
 	else  hs.graphicsDir = 'http://'+location.hostname+'/wp-content/plugins/lightbox-gallery/graphics/';

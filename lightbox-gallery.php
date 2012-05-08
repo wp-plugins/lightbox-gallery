@@ -4,7 +4,7 @@ Plugin Name: Lightbox Gallery
 Plugin URI: http://wpgogo.com/development/lightbox-gallery.html
 Description: The Lightbox Gallery plugin changes the view of galleries to the lightbox.
 Author: Hiroaki Miyashita
-Version: 0.7.1
+Version: 0.7.2
 Author URI: http://wpgogo.com/
 */
 
@@ -448,7 +448,7 @@ function lightbox_gallery_admin() {
 <h3><?php _e('CMS x WP', 'lightbox-gallery'); ?></h3>
 <div class="inside">
 <p><?php _e('There are much more plugins which are useful for developing business websites such as membership sites or ec sites. You could totally treat WordPress as CMS by use of CMS x WP plugins.', 'lightbox-gallery'); ?></p>
-<p style="text-align:center"><a href="http://www.cmswp.jp/" target="_blank"><img src="<?php echo get_option('home') . '/' . PLUGINDIR . '/' . $plugin_dir . '/js/'; ?>cmswp.jpg" width="125" height="125" alt="CMSxWP" /></a><br /><a href="http://www.cmswp.jp/" target="_blank"><?php _e('WordPress plugin sales site: CMS x WP', 'lightbox-gallery'); ?></a></p>
+<p style="text-align:center"><a href="http://www.cmswp.jp/" target="_blank"><img src="<?php echo get_option('siteurl') . '/' . PLUGINDIR . '/' . $plugin_dir . '/js/'; ?>cmswp.jpg" width="125" height="125" alt="CMSxWP" /></a><br /><a href="http://www.cmswp.jp/" target="_blank"><?php _e('WordPress plugin sales site: CMS x WP', 'lightbox-gallery'); ?></a></p>
 </div>
 </div>
 <?php
